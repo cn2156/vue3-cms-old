@@ -2,15 +2,30 @@
   "name": "backend",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "eslint ./src/**/*.{js,vue} --fix && vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ./src/**/*.{js,vue} --fix"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "@element-plus/icons-vue": "^0.2.4",
+    "axios": "^0.24.0",
+    "element-plus": "^1.2.0-beta.6",
+    "sass": "^1.45.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "unplugin-auto-import": "^0.5.3",
+    "unplugin-vue-components": "^0.17.9",
     "vite": "^2.7.2"
   }
 }

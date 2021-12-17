@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  CMS
+  <router-view />
 </template>
 
 <style></style>
